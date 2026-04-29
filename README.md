@@ -1,6 +1,6 @@
 # 港股IPO智能打新评估工具
 
-基于127只2025-2026年真实港股IPO数据回测校准的智能评分引擎。
+基于2025-2026年真实港股IPO数据回测校准的智能评分引擎。
 
 ## 功能特性
 
@@ -24,7 +24,7 @@ pip install -e .
 
 ## 使用方法
 
-### 1. 手动搜索模式（推荐）
+### 1. 手动搜索模式需配置或Agent自行调用（推荐）
 
 先用搜索引擎收集IPO数据，然后传给CLI：
 
@@ -37,25 +37,7 @@ hkipo search \
   --text "基石阿里巴巴、GIC Private Limited、富达国际、贝莱德，红杉中国、云锋基金，认购约16.44亿港元，占全球发售股份约50%，孖展认购78倍，15%绿鞋，稳价人高盛，行业AI，市值845亿港元，PE=500，联席保荐高盛、中金公司"
 ```
 
-### 2. 自动搜索模式
-
-需要设置 `EXA_API_KEY` 或 `MINIMAX_API_KEY` 环境变量：
-
-```bash
-hkipo auto --code 1879 --name "曦智科技" --date 2026-04-28 --price 183.2
-```
-
-### 3. 手动输入模式
-
-```bash
-hkipo score \
-  --code 1879 --name "曦智科技" --date 2026-04-28 --price 183.2 \
-  --mcap 845 --sponsor "高盛、中金" --stabilizer "高盛" \
-  --cs "GIC Private Limited" "贝莱德" --cs-pct 0.52 \
-  --greenshoe --industry "AI" --sub 5784 --pe 500
-```
-
-### 4. 回测验证
+### 2. 回测验证
 
 ```bash
 hkipo backtest
@@ -89,7 +71,7 @@ hkipo backtest
 将 `SKILL.md` 复制到你的 Claude Code skills 目录：
 
 ```bash
-cp SKILL.md ~/.claude/skills/hk-ipo-screener.md
+cp SKILL.md ~/.claude/skills/hk-ipo-screener
 ```
 
 然后在 Claude Code 中即可使用港股IPO评估功能。
@@ -117,7 +99,6 @@ hk_ipo_screener/
 
 基于2025年1月-2026年4月127只港股IPO真实数据：
 
-- **Strong Buy信号**：100%准确率
 - **Buy信号**：97.1%准确率
 - **整体准确率**：73.1%
 
