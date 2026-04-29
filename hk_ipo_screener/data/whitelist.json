@@ -1,0 +1,62 @@
+{
+  "cornerstone_whitelist": [
+    "GIC Private Limited", "GIC", "Lake Bleu", "BlackRock", "贝莱德",
+    "Hillhouse Capital", "高瓴", "高瓴资本", "OrbiMed", "奥博",
+    "Fidelity International", "富达", "富达国际",
+    "Baillie Gifford", "柏基", "柏基投资",
+    "Greenwoods Asset Management", "景林", "景林资产",
+    "UBS Asset Management", "瑞银", "瑞银资管",
+    "Schroders", "施罗德", "施罗德投资",
+    "淡马锡", "Temasek", "HHLR", "HHLR Advisors",
+    "CPE", "CPE源峰", "Pinpoint", "云锋基金", "云锋",
+    "泰康", "泰康资产", "阳光人寿",
+    "博裕", "博裕资本", "易方达", "华夏", "盘京", "高毅资产", "高毅",
+    "Redwood", "Mirae Asset", "康禧",
+    "红杉", "红杉中国", "Sequoia",
+    "阿里巴巴", "Alibaba", "腾讯", "Tencent",
+    "陆家嘴", "正大", "博时", "广发", "富国", "惠理",
+    "未来资产", "宁远", "Hesai",
+    "JPMorgan", "摩根大通", "Morgan Stanley", "摩根士丹利",
+    "Goldman Sachs", "高盛",
+    "中金资本", "CICC",
+    "Cayman Blue", "OrbiMed"
+  ],
+  "sponsor_tiers": {
+    "tier0": ["摩根大通", "JPMorgan", "摩根士丹利", "Morgan Stanley", "高盛", "Goldman Sachs"],
+    "tier1": ["中金", "中金公司", "CICC", "中信证券", "中信里昂", "海通国际", "国泰君安", "建银国际", "瑞银", "UBS", "花旗", "Citi", "美林", "Merrill Lynch"],
+    "tier2": ["华泰金融控股", "华泰", "招银国际", "中信建投", "广发融资", "广发", "法国巴黎", "BNP", "德意志", "Deutsche", "农银国际", "建银国际金融", "申万宏源", "光大融资", "国泰君安融资", "工银国际", "招商证券", "越秀融资", "兴证国际"],
+    "tier3": ["华兴证券", "国信证券", "民银资本", "绰耀资本", "日进资本", "迈时资本", "国金证券", "铠盛资本", "清科资本", "东方融资", "星展亚洲", "国元融资", "光银国际"]
+  },
+  "stabilizer_top": ["摩根大通", "JPMorgan", "高盛", "Goldman Sachs", "瑞银", "UBS", "中金", "CICC", "建银", "花旗", "Citi", "美林", "Merrill Lynch", "摩根士丹利", "Morgan Stanley"],
+  "hot_sectors": [
+    "AI", "人工智能", "机器人", "半导体", "CMOS", "光芯片", "储能", "集成电路",
+    "芯片", "创新药", "医疗器械", "生物医药", "新能源", "电动车",
+    "汽车智能化", "HUD", "AI医疗", "自动驾驶", "激光雷达", "充电桩",
+    "PCB", "通信设备", "智能终端", "制药", "生物科技", "云计算",
+    "SaaS", "电池", "电机", "云计算"
+  ],
+  "sponsor_break_rates": {
+    "摩根大通": 0.88,
+    "JPMorgan": 0.88,
+    "摩根士丹利": 0.87,
+    "Morgan Stanley": 0.87,
+    "高盛": 0.84,
+    "Goldman Sachs": 0.84,
+    "中金": 0.80,
+    "CICC": 0.80,
+    "中信证券": 0.76,
+    "海通国际": 0.82,
+    "国泰君安": 0.86,
+    "建银国际": 0.85,
+    "瑞银": 0.75,
+    "UBS": 0.75,
+    "华泰金融控股": 0.72,
+    "招银国际": 0.70,
+    "中信建投": 0.70,
+    "花旗": 0.73,
+    "Citi": 0.73,
+    "美林": 0.75,
+    "Merrill Lynch": 0.75
+  },
+  "bottom_sponsors": ["小投行", "绰耀资本", "日进资本", "迈时资本", "铠盛资本", "清科资本", "光银国际"]
+}
