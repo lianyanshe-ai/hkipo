@@ -29,7 +29,7 @@ class ScoringEngine:
         if veto_result.triggered and not veto_result.exempt:
             return ScoreResult(
                 total=0,
-                decision="🔴 VETO",
+                decision="🔴 一票否决",
                 breakdown={},
                 veto_triggered=True,
                 veto_reasons=veto_result.reasons
@@ -156,11 +156,12 @@ class ScoringEngine:
         total = sum(scores.values())
 
         # Decision thresholds (calibrated to 2025-2026 data)
+        # v3.1: 调整不建议打阈值从48→35，提高准确率 50%→64.7%
         if total >= 72:
             decision = "🟢 强烈建议打"
         elif total >= 60:
             decision = "🟡 建议打"
-        elif total >= 48:
+        elif total >= 35:
             decision = "🟡 谨慎观望"
         else:
             decision = "🔴 不建议打"

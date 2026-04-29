@@ -1,6 +1,6 @@
-"""港股IPO智能打新评估工具 v3.0"""
+"""港股IPO智能打新评估工具 v3.1"""
 
-__version__ = "3.0.0"
+__version__ = "3.1.0"
 
 from hk_ipo_screener.core.types import IPODTO, ScoreResult, AnalysisResult, Decision
 from hk_ipo_screener.core.scoring import ScoringEngine

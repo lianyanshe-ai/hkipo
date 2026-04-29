@@ -121,7 +121,7 @@ def generate_report(ipo: IPODTO, result: ScoreResult) -> str:
 
     # Decision
     if result.veto_triggered:
-        lines.append(f"## 🔴 VETO 一票否决")
+        lines.append(f"## 🔴 一票否决")
         lines.append(f"")
         for reason in result.veto_reasons:
             lines.append(f"- ❌ {reason}")

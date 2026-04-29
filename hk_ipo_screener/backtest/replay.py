@@ -24,9 +24,9 @@ def classify_decision(result):
     """Classify scoring result into buy/skip/hold."""
     if result.veto_triggered:
         return "skip"
-    if result.total >= 70:
+    if result.total >= 72:
         return "buy"
-    if result.total >= 58:
+    if result.total >= 60:
         return "hold"
     return "skip"
 
